@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from visual.views import file_input
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^upload/', file_input, name='upload'),
 ]
